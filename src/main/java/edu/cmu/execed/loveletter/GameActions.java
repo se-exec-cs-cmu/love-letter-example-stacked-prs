@@ -19,12 +19,12 @@ abstract class GameActions {
     void useGuard(Scanner in, Player opponent) {
         ArrayList<String> cardNames = new ArrayList<>(Arrays.asList(Card.CARD_NAMES));
 
-        System.out.print("Which card would you like to guess: ");
+        System.out.print("Which card would you like to guess? ");
         String cardName = in.nextLine();
 
         while (!cardNames.contains(cardName.toLowerCase()) || cardName.equalsIgnoreCase("guard")) {
             System.out.println("Invalid card name");
-            System.out.print("Which card would you like to guess: ");
+            System.out.print("Which card would you like to guess? ");
             cardName = in.nextLine();
         }
 
@@ -142,7 +142,7 @@ abstract class GameActions {
         Player opponent = null;
         boolean validTarget = false;
         while (!validTarget) {
-            System.out.print("Who would you like to target: ");
+            System.out.print("Who would you like to target? ");
             String opponentName = in.nextLine();
             opponent = playerList.getPlayer(opponentName);
             if (opponent == null) {
