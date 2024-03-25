@@ -1,0 +1,6 @@
+[submodule "deps/ck-mvn-plugin"]
+	path = deps/ck-mvn-plugin
+	url = https://github.com/jazzmuesli/ck-mvn-plugin
+[submodule "deps/ck"]
+	path = deps/ck
+	url = https://github.com/mauricioaniche/ck
